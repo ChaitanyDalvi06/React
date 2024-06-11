@@ -1,57 +1,35 @@
-// import React, { useRef } from 'react';
-// import './App.css';
-
-// function App() {
-//   let divR = useRef();
-//   let divB = useRef();
-
-//   function handleRed() {
-//     if (divR.current) {
-//       divR.current.style.backgroundColor = 'blue';
-//     }
-//   }
-
-//   function handleBlue() {
-//     if (divB.current) {
-//       divB.current.style.backgroundColor = 'red';
-//     }
-//   }
-
-//   return (
-//     <>
-     
-//       <div className='div-1-red' ref={divR} onClick={handleRed}>
-      
-//       </div>
-//       <div className='div-2-blue' ref={divB} onClick={handleBlue}>
-       
-//       </div>
-//     </>
-//   );
-// }
-
-// export default App;
-
-
-
-
-import { createContext, useRef, useState } from 'react';
-import A from './A';
-import B from './B';
-export const DataContext = createContext()
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import Weather from './weather'
 
 function App() {
-
-  let [name,setName] = useState("Chaitanya")
-
+  const [count, setCount] = useState(0)
 
   return (
-  
     <>
-      <DataContext.Provider value={{name:name}}>
-        <A/>
-        <B/>
-      </DataContext.Provider>
+      {/* <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p> */}
+      <Weather></Weather>
     </>
   )
 }
