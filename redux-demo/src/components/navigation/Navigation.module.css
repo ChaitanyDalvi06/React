@@ -1,0 +1,32 @@
+.header
+{
+    width:100%;
+    padding:20px 5% ;
+    background-color: #343030;
+    display: flex;
+    justify-content: space-between;
+}
+.logo
+{
+    background-color: yellow;
+    width:fit-content;
+}
+
+.nav
+{
+    width:30%;
+    height:30px;
+    background-color:#f1ecec;
+
+}
+
+.navlinks
+{
+    width: 100%;
+    display: flex;
+    color: rgb(250, 249, 247);
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
