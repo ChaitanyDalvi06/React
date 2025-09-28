@@ -1,0 +1,15 @@
+.form-parent {
+    width: 100%;
+    min-height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    width:30%;
+    height:500px;
+    background-color: white;
+
+}
